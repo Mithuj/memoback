@@ -3,7 +3,8 @@ node_modules/
 package-lock.json
 
 # Environment variables
-.env
+# .env is intentionally not ignored to allow it to be committed for Render deployment
+# .env
 
 # Logs & debugging files
 npm-debug.log*
