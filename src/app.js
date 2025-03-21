@@ -6,7 +6,7 @@ const app = express();
 
 // CORS configuration - Important to allow requests from your frontend
 app.use(cors({
-  origin: '*',  // Allow all origins in development
+  origin: ['https://memoform.vercel.app'],  // Allow all origins in development
   credentials: true
 }));
 
