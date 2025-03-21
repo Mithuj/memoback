@@ -359,8 +359,8 @@ exports.generateShareLink = async (req, res) => {
       { expiresIn: '30d' } // Longer expiry for share links
     );
     
-    // Get base URL from environment variable or use a default
-    const baseUrl = process.env.BASE_URL || 'https://da31-175-157-248-67.ngrok-free.app';
+    // Replace BASE_URL with WEBFORM_URL
+    const baseUrl = process.env.WEBFORM_URL || 'https://memoform.vercel.app';
     
     res.status(200).json({
       message: 'Share link generated successfully',
